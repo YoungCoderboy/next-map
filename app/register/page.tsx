@@ -11,27 +11,27 @@ export default function RegisterPage() {
   const [name, setName] = useState("");
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    router.push("/map");
+    router.push("/main");
   };
   return (
-    <section className="bg-gray-50 dark:bg-gray-900">
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <section className="bg-[url('https://t4.ftcdn.net/jpg/03/73/32/17/360_F_373321767_FvsKtnjUajjjOTq1a87aXWIoRepUC40I.jpg')] dark:bg-gray-900 bg-no-repeat bg-center bg-cover">
+      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
         <a
-          href="/"
-          className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
+          href="/login"
+          className="flex items-center p-2 border-black  text-9xl mb-16 font-mono font-bold text-gray-900 dark:text-black  rounded-xl"
         >
-          <span className="text-3xl p-1">🔥</span> Crime HotSpot
+          <span className="text-3xl p-1"></span> Crime Hotspot
         </a>
-        <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-300 dark:border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">
               Create Account
             </h1>
             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-gray-100 dark:text-black"
                 >
                   Your name
                 </label>
@@ -41,14 +41,14 @@ export default function RegisterPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   id="name"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-400 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-400 dark:border-gray-600 dark:placeholder-gray-800 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="John Doe"
                 />
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
                 >
                   Your email
                 </label>
@@ -58,14 +58,14 @@ export default function RegisterPage() {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-400 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-400 dark:border-gray-600 dark:placeholder-gray-800 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="johndoe@company.com"
                 />
               </div>
               <div>
                 <label
                   htmlFor="password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
                 >
                   Password
                 </label>
@@ -76,7 +76,7 @@ export default function RegisterPage() {
                   placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-400 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-400 dark:border-gray-600 dark:placeholder-gray-800 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 />
               </div>
               <div className="flex items-start">
@@ -91,7 +91,7 @@ export default function RegisterPage() {
                 <div className="ml-3 text-sm">
                   <label
                     htmlFor="terms"
-                    className="font-light text-gray-500 dark:text-gray-300"
+                    className="font-bold text-gray-500 dark:text-black"
                   >
                     I accept the{" "}
                     <a
@@ -109,7 +109,7 @@ export default function RegisterPage() {
               >
                 Create an Account
               </button>
-              <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+              <p className="text-sm font-bold text-gray-500 dark:text-gray-900">
                 Already have an account yet?{" "}
                 <a
                   href="/login"
