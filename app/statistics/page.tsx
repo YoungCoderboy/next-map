@@ -54,7 +54,7 @@ export const data = {
   datasets: [
     {
       label: "Cases",
-      data: [693, 4512, 3257, 1901, 612, 956],
+      data: [173, 1128, 814, 475, 153, 239],
       backgroundColor: [
         "rgba(255, 99, 132, 0.5)",
         "rgba(54, 162, 235, 0.5)",
@@ -95,7 +95,7 @@ export const dataBar = {
   datasets: [
     {
       label: "Crime Dataset",
-      data: [693, 4512, 3257, 1901, 612, 956],
+      data: [173, 1128, 814, 475, 153, 239],
       backgroundColor: "rgba(255, 99, 132, 0.5)",
     },
   ],
